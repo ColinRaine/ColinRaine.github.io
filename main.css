@@ -1,8 +1,9 @@
 body {
+  background: #999;
   margin: 0;
 }
 header {
-  background: #999;
+  background: #888;
   color: white;
 }
 
