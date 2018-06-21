@@ -1,50 +1,30 @@
 body {
-  background: #999;
+  background-color: #FFFFF0;
   margin: 0;
+}
+
+.BIO p {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 header {
-  background: #888;
-  color: white;
+  font-family: monospace;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: black;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-
 header h1 {
-  display: inline;
+  font-size: 5em;
   margin: 0;
-  padding: 15px 15px 0 15px;
 }
 
-nav ul {
-  display: inline;
+header p {
+  font-size: 2em;
   margin: 0;
-  padding: 0 0 0 15px;
-}
-
-nav ul li {
-  background: black;
-  color: white;
-  display: inline-block;
-  list-style-type: none;
-  padding: 5px 15px;
-}
-
-nav ul li a {
-  color: white;
-}
-
-.row {
-
-}
-
-.col {
-  background: #555;
-  border-radius: 5px;
-  color: white;
-  padding: .5%;
-  float: left;
-  margin: .5%;
-  width: 31.33333%;
-}
-
-footer {
-  clear: both;
 }
