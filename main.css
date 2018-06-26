@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  background: linear-gradient(#f3ebfa, #91b5e3);
+  background-color: rgb(40, 42, 46);
   background-attachment: fixed;
   height: 100vh;
   margin: 0;
@@ -13,7 +17,7 @@ body {
 }
 
 header {
-
+  font-size: 100%;
   font-family: 'Amatic SC', cursive;
   margin: 0;
   position: relative;
@@ -21,13 +25,14 @@ header {
   text-align: center;
 }
 header h1 {
-  color: black;
-  font-size: 8vw;
+  color: #91b5e3;
+  font-size: 5em;
   margin: inherit;
 }
 
 header p {
-  font-size: 2.2vw;
+  color: #f3ebfa;
+  font-size: 1.1em;
   margin: 0;
 }
 
@@ -37,12 +42,12 @@ li {
 
 li a {
   display: inline-block;
-  color: black;
+  color: #f3ebfa;
   padding: 8px;
 }
 
 li a:hover {
-  color: blue;
+  color: rgb(151, 72, 144);
 }
 
 nav {
@@ -54,11 +59,42 @@ nav {
 ul {
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: black;
-  border
+  border-color: #f3ebfa;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
   padding: 0;
 
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    position: relative;
+    top: 15%;
+  }
+
+  li {
+    display: block;
+  }
+
+  li a {
+    display: block;
+  }
+
+  li a:hover {
+    background-color: #f3ebfa;
+    color: rgb(151, 72, 144);
+  }
+
+  nav {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    top: 15%;
+  }
+
+  ul {
+    border: 5px double #f3ebfa;
+    border-radius: 15px;
+  }
 }
