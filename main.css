@@ -1,7 +1,12 @@
-body {
+html {
   background: linear-gradient(#f3ebfa, #91b5e3);
-  margin: 0;
+  background-attachment: fixed;
+  min-height: 100%;
+}
 
+body {
+  min-height: 100%;
+  margin: 0;
 }
 
 header {
@@ -9,12 +14,12 @@ header {
   font-family: 'Amatic SC', cursive;
   margin: 0;
   position: relative;
-  top: 30%;
+  top: 28%;
   text-align: center;
 }
 header h1 {
   color: black;
-  font-size: 11vw;
+  font-size: 8vw;
   margin: inherit;
 }
 
@@ -39,7 +44,7 @@ li a:hover {
 
 nav {
   position: relative;
-  top: 30%;
+  top: 28%;
   text-align: center;
 }
 
