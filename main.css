@@ -3,7 +3,7 @@
 }
 
 html {
-  background-color: rgb(40, 42, 46);
+  background-color: rgba(255, 255, 240, 0);
   background-attachment: fixed;
   height: 100vh;
   margin: 0;
@@ -21,80 +21,48 @@ header {
   font-family: 'Amatic SC', cursive;
   margin: 0;
   position: relative;
-  top: 24%;
   text-align: center;
 }
+
+.abvh1 {
+  margin: 15px 0 0 0;
+  padding-top: 45px;
+}
 header h1 {
-  color: #91b5e3;
+  border: 1px solid;
+  border-width: medium;
+  color: black;
   font-size: 5em;
   margin: inherit;
 }
 
 header p {
-  color: #f3ebfa;
+  color: black;
   font-size: 1.1em;
   margin: 0;
 }
 
-li {
+.nav {
+  background-color: rgba(45,45,45,0.98);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.nav li {
   display: inline;
 }
 
-li a {
+.nav a {
+  color: white;
   display: inline-block;
-  color: #f3ebfa;
-  padding: 8px;
+  padding: 10px;
 }
 
-li a:hover {
-  color: rgb(151, 72, 144);
-}
-
-nav {
-  position: relative;
-  top: 25%;
-  text-align: center;
-}
-
-ul {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #f3ebfa;
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    position: relative;
-    top: 15%;
-  }
-
-  li {
-    display: block;
-  }
-
-  li a {
-    display: block;
-  }
-
-  li a:hover {
-    background-color: #f3ebfa;
-    color: rgb(151, 72, 144);
-  }
-
-  nav {
-    margin-left: 10%;
-    margin-right: 10%;
-    position: relative;
-    top: 15%;
-  }
-
-  ul {
-    border: 5px double #f3ebfa;
-    border-radius: 15px;
-  }
+.nav a:hover {
+  color: grey;
 }
