@@ -5,6 +5,7 @@
 html {
   background-color: rgba(255, 255, 240, 0);
   background-attachment: fixed;
+	font-family: Avenir, "Helvetica Neue";
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -18,22 +19,22 @@ body {
 
 header {
   font-size: 100%;
-  font-family: 'Amatic SC', cursive;
   margin: 0;
   position: relative;
   text-align: center;
 }
 
 .abvh1 {
-  margin: 15px 0 0 0;
-  padding-top: 45px;
+  margin: 0.8em 0 0 0;
+  padding-top: 3em;
 }
 header h1 {
-  border: 1px solid;
+	border-bottom: 1px solid;
+  border-top: 1px solid;
   border-width: medium;
   color: black;
   font-size: 5em;
-  margin: inherit;
+  margin: 0;
 }
 
 header p {
@@ -50,7 +51,7 @@ header p {
   position: fixed;
   text-align: center;
   top: 0;
-  width: 100%;
+  width: 100%
 }
 
 .nav li {
@@ -60,9 +61,24 @@ header p {
 .nav a {
   color: white;
   display: inline-block;
-  padding: 10px;
+  padding: .8em;
 }
 
 .nav a:hover {
   color: grey;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+#card {
+	text-align: center;
+	border-radius: 5%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	max-width: 40%;
+	position: relative;
+	left: 30%
+}
+
+#firstart {
+
 }
