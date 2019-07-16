@@ -16,3 +16,7 @@ section {
 	width: 33.3%;
 	margin: auto;
 }
+
+table {
+	border: 1px black solid;
+}

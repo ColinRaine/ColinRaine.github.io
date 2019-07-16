@@ -13,32 +13,29 @@
 
 		<main>
 
-			<section class="attr">
+			<section>
 				<div>
 					<label for="attr1">Attribute 1:</label>
 					<input type="number" class="attr1" min="0" max="100" step="0.1">
 				</div>
-
-			</section>
-
-			<section class="weight">
-				<div>
-					<label for="weight1">Weight 1:</label>
-					<input type="number" class="weight1" min="0" max="100" step="5">
-				</div>
-
 			</section>
 
 			<section>
 				<div>
+					<label for="weight1">Weight 1:</label>
+					<input type="number" class="weight1" min="0" max="100" step="5">
+				</div>
+			</section>
+
+			<section>
+				<div>
+					<input type="submit" value="Submit" class="submit">
 					<input type="text" class="result" disabled>
-					<button class="submit">
-					submit
-					</button>
 				</div>
 
-				<table>
-					<td class="table"></td>
+				<table class="table">
+					<th>Result</th>
+					<th>Weighted Average</th>
 				</table>
 			</section>
 
