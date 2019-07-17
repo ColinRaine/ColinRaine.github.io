@@ -1,5 +1,5 @@
 html {
-  background-color: rgba(255, 255, 240, 0);
+  background-color: rgb(67, 67, 67);
   background-attachment: fixed;
 	font-family: Avenir, "Helvetica Neue";
 	font-size: 100%;
@@ -8,38 +8,41 @@ html {
   padding: 0;
 }
 
-body {
+main {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 1em;
+	grid-auto-rows: minmax(10em, auto);
 }
 
 header{
+	color: greenyellow;
 	margin: auto;
 	text-align: center;
 }
 
-section {
-}
-.attribute {
-	float: left;
+section{
+	box-shadow: 0 4px 8px 0 rgba(109, 255, 103, 0.2);
+	border-radius: 2em;
+	background-color: rgb(255, 180, 77);
 	margin: auto;
-	padding: 0;
-	text-align: center;
-	width: 50%;
+	padding: 4em;
 }
 
-.weight {
-	margin: auto;
-	padding: 0;
-	text-align: center;
-	width: 50%
+.attribute{
+	grid-column: 1/4;
+	grid-row: 1;
 }
-
-.submission {
-	margin: auto;
-	text-align: center;
+.weight{
+	grid-column: 1/4;
+	grid-row: 2;
+}
+.submit{
+	grid-column: 2/3;
+	grid-row: 3;
 }
 
 table {
-	margin: auto;
 	border: 1px black solid;
 }
 
