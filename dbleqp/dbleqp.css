@@ -50,7 +50,7 @@ td {
 	border: 1px black solid;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-resolution: 600dpi) {
 	.one, .two {
 		display: grid;
 	}
