@@ -22,9 +22,9 @@ main {
 }
 /* ---------SECTION--------- */
 section{
-	box-shadow: 0 4px 8px 0 rgba(109, 255, 103, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(103, 197, 255, 0.2);
 	border-radius: 2em;
-	background-color: rgb(255, 180, 77);
+	background-color: rgba(152, 152, 152, 0.69);
 	padding: 4em;
 }
 .attribute{
@@ -56,8 +56,20 @@ td {
 	border: 1px black solid;
 }
 
-@media screen and (max-resolution: 600dpi) {
-	.one, .two {
+@media screen and (min-width: 414px) {
+	.attribute{
+		grid-row: 1;
+		grid-column: 1/13;
+	}
+	.first, .sec{
 		display: grid;
+	}
+	.weight{
+		grid-row: 2;
+		grid-column: 1/13;
+	}
+	.other{
+		grid-row: 3;
+		grid-column: 1/13;
 	}
 }
