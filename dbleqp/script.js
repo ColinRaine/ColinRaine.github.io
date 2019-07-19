@@ -3,14 +3,29 @@ const weight = [document.querySelector('.weight1'),document.querySelector('.weig
 const submit = document.querySelector('.submit');
 const table = document.querySelector('.table');
 const result = document.querySelector('.result');
+const reset = document.querySelector('.reset');
 let index = 1;
 
-function weightAvg() {
+
+function check() {
 	let value1 = Number(attr[0].value) * (Number(weight[0].value)/100);
 	let value2 = Number(attr[1].value) * (Number(weight[1].value)/100);
 	let value3 = Number(attr[2].value) * (Number(weight[2].value)/100);
+	let sumWeight = Number(weight[0].value) + Number(weight[1].value) + Number(weight[2].value);
 
-	let sum = value1+value2+value3;
+	if (value1 == 0 || value2==0 || value3==0){
+		alert("Missing Attribute and/or Weight value(s).");
+	}else if (sumWeight<100){
+		alert("Weight less than 100%");
+	}else if(sumWeight>100){
+		alert("Weight greater than 100%");
+	}else {
+		return weightAvg(value1,value2,value3);
+	}
+}
+
+function weightAvg(num1,num2,num3) {
+	let sum = num1+num2+num3;
 	result.value = sum;
 	appendTable(sum);
 }
@@ -27,9 +42,16 @@ function appendTable(sum) {
 	index++;
 	cell2.textContent = sum;
 	table.appendChild(cell2);
+	return;
 }
 
-submit.addEventListener('click', weightAvg);
+function resetTable() {
+	while(table.childElementCount > 2 ){
+		table.removeChild(table.lastChild);
+	}
+	index = 1;
+}
 
 
-
+submit.addEventListener('click', check);
+reset.addEventListener('click', resetTable);
