@@ -56,7 +56,7 @@ td {
 	border: 1px black solid;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 414px) {
 	.attribute{
 		grid-row: 1;
 		grid-column: 1/13;
