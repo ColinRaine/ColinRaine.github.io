@@ -3,6 +3,7 @@
 <title>DBL Equipment Manager</title>
 <meta charset="utf-8" />
 <link href="dbleqp.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Code+Pro&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="script.js" defer></script>
 
@@ -38,14 +39,24 @@
 			</section>
 
 			<section class="other">
-				<div class="third">
-					<button class="submit">Submit</button>
-					<input type="text" class="result" disabled>
+				<div class="nested0"><button class="submit">Submit</button></div>
+				<div class="nested1"><input type="text" class="result" disabled> </div>
+				<div class="nested2">
 					<button class="reset">Reset</button>
+				</div>
+
+				<div class="nested3">
 					<table class="table">
-					<th>Result</th>
-					<th>Weighted Average</th>
-				</table>
+						<caption>OUTPUT</caption>
+						<thead>
+							<tr>
+								<th scope="col">Result</th>
+								<th scope="col">Weighted Average</th>
+							</tr>
+						</thead>
+						<tbody class="tbody">
+						</tbody>
+					</table>
 				</div>
 			</section>
 

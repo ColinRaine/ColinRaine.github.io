@@ -2,6 +2,7 @@ const attr = [document.querySelector('.attr1'), document.querySelector('.attr2')
 const weight = [document.querySelector('.weight1'),document.querySelector('.weight2'),document.querySelector('.weight3')];
 const submit = document.querySelector('.submit');
 const table = document.querySelector('.table');
+const tbody = document.querySelector('.tbody');
 const result = document.querySelector('.result');
 const reset = document.querySelector('.reset');
 let index = 1;
@@ -37,11 +38,11 @@ function appendTable(sum) {
 	let num = sum;
 
 	cell.textContent = index;
-	table.appendChild(tr);
-	table.appendChild(cell);
+	tbody.appendChild(tr);
+	tbody.appendChild(cell);
 	index++;
 	cell2.textContent = sum;
-	table.appendChild(cell2);
+	tbody.appendChild(cell2);
 	return;
 }
 
