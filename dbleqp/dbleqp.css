@@ -2,6 +2,7 @@ html {
   background-color: rgb(67, 67, 67);
   background-attachment: fixed;
 	background-image: url(/backgroundImg/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
+	background-size: cover;
 	font-family: Avenir, "Helvetica Neue";
 	font-size: 100%;
   height: 100vh;
@@ -16,7 +17,6 @@ header{
 }
 
 main {
-	background-image: url(/backgroundImg/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
 	display: grid;
 	grid-auto-rows: minmax(1em,auto);
 	grid-template-columns: repeat(12,1fr);
@@ -30,27 +30,115 @@ section{
 	padding: 4em;
 }
 .attribute{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
 	grid-row: 1;
-	grid-column: 3/11;
+	grid-column: 4/7;
+	color: rgba(135,255,255,1);
+	text-shadow: 1px 1px black;
+	padding: 1em;
 }
 .weight{
-	grid-row: 2;
-	grid-column: 3/11;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-row: 1;
+	grid-column: 7/10;
+	color: rgba(135,255,255,1);
+	text-shadow: 1px 1px black;
+	padding: 1em;
 }
 .other {
 	display: grid;
 	grid-template-columns: repeat(12,1fr);
 	grid-auto-rows: minmax(5em,auto);
-	grid-auto-columns: auto;
 	grid-row: 3;
 	grid-column: 4/10;
 	padding: 1em;
 }
-.other>div:nth-child(odd){
-	background-color: aqua;
-}
 
-/* ------------------------- */
+/* -----weight classes------- */
+.weight p{
+	grid-row: 1;
+	grid-column: 1/4;
+	align-self: end;
+	text-align: justify;
+}
+.secW1, .weight1{
+	grid-row: 2;
+	grid-column: 2/4;
+	align-self: end;
+	width: 100%;
+
+}
+.secN1{
+	grid-row: 3;
+	grid-column: 2/3;
+	align-self: start;
+}
+.secW2, .weight2{
+	grid-row: 4/5;
+	grid-column: 2/4;
+	align-self: end;
+	width: 100%;
+}
+.secN2{
+	grid-column: 2/3;
+	grid-row: 5/6;
+	align-self: start;
+}
+.secW3, .weight3{
+	grid-row: 6/7;
+	grid-column: 2/3;
+	align-self: end;
+	width: 100%;
+}
+.secN3{
+	grid-column: 2/3;
+	grid-row: 7/8;
+	align-self: start;
+}
+/*------attribute classes-----*/
+.attribute p{
+	grid-row: 1;
+	grid-column: 1/4;
+	align-self: end;
+	text-align: justify;
+}
+.secA1, .attr1{
+	grid-row: 2;
+	grid-column: 2/4;
+	align-self: end;
+	width: 100%;
+
+}
+.secAn1{
+	grid-row: 3;
+	grid-column: 2/3;
+	align-self: start;
+}
+.secA2, .attr2{
+	grid-row: 4/5;
+	grid-column: 2/4;
+	align-self: end;
+	width: 100%;
+}
+.secAn2{
+	grid-column: 2/3;
+	grid-row: 5/6;
+	align-self: start;
+}
+.secA3, .attr3{
+	grid-row: 6/7;
+	grid-column: 2/3;
+	align-self: end;
+	width: 100%;
+}
+.secAn3{
+	grid-column: 2/3;
+	grid-row: 7/8;
+	align-self: start;
+}
+/*----------------------------*/
 .nested0{
 	grid-row: 1;
 	grid-column: 1/6;
@@ -106,7 +194,7 @@ th, td {
   padding: 1rem;
 }
 /*--------------------------*/
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
 	.attribute{
 		grid-row: 1;
 		grid-column: 1/13;
@@ -121,5 +209,8 @@ th, td {
 	.other{
 		grid-row: 3;
 		grid-column: 1/13;
+	}
+	.nested3{
+		grid-column: 3/11;
 	}
 }
