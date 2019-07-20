@@ -43,6 +43,15 @@ function appendTable(sum) {
 	index++;
 	cell2.textContent = sum;
 	tbody.appendChild(cell2);
+	/*
+	if (tbody.childElementCount%2 ==1){
+		alert("hi");
+		tableRow.style.backgroundColor = "red";
+		return;
+	}else {
+		tableRow.style.backgroundColor = "blue";
+	}*/
+
 	return;
 }
 
