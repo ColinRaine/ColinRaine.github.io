@@ -157,7 +157,7 @@ section{
 }
 .nested3{
 	grid-row: 2;
-	grid-column: 4/10;
+	grid-column: 3/11;
 }
 
 /*----------Table-----------*/
@@ -189,6 +189,7 @@ thead{
 tbody td {
  	text-align: center;
 	letter-spacing: 0.1rem;
+	color: #ffffff
 }
 th, td {
   padding: 1rem;
@@ -217,9 +218,11 @@ th, td {
 		align-self: start;
 	}
 	.result{
-		width: 90%;
+	}
+	table{
+		width: 100%;
 	}
 	.nested3{
-		grid-column: 2/11;
+		grid-column: 2/12;
 	}
 }

@@ -41,23 +41,15 @@ function appendTable(sum) {
 	tbody.appendChild(tr);
 	tbody.appendChild(cell);
 	index++;
-	cell2.textContent = sum;
+	cell2.textContent = sum.toFixed(2);
 	tbody.appendChild(cell2);
-	/*
-	if (tbody.childElementCount%2 ==1){
-		alert("hi");
-		tableRow.style.backgroundColor = "red";
-		return;
-	}else {
-		tableRow.style.backgroundColor = "blue";
-	}*/
 
 	return;
 }
 
 function resetTable() {
-	while(table.childElementCount > 2 ){
-		table.removeChild(table.lastChild);
+	while(tbody.childElementCount > 1 ){
+		tbody.removeChild(tbody.lastChild);
 	}
 	index = 1;
 }
