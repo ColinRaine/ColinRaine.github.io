@@ -224,42 +224,6 @@ th, td {
 		grid-column: 3/11
 	}
 }
-@media screen and (max-width: 425px) {
-	.attribute{
-		grid-row: 1;
-		grid-column: 1/13;
-	}
-	.weight{
-		grid-row: 2;
-		grid-column: 1/13;
-	}
-	.other{
-		grid-row: 3;
-		grid-column: 1/13;
-	}
-	.nested0{
-		grid-column: 2/3;
-		grid-row: 1;
-	}
-	.nested1{
-		grid-column: 4/10;
-		grid-row: 1;
-		align-self: center;
-	  height: 50%;
-	}
-	.nested2{
-		grid-column: 11;
-	}
-	.result{
-		width: 99%;
-	}
-	table{
-		width: 100%;
-	}
-	.nested3{
-		grid-column: 2/12;
-	}
-}
 
 @media screen and (max-width: 425px){
 	.nested0{
