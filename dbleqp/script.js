@@ -36,6 +36,8 @@ function appendTable(sum) {
 	let cell = document.createElement('td');
 	let cell2 = document.createElement('td');
 	let num = sum;
+	tr.className = "tblRow";
+
 
 	cell.textContent = index;
 	tbody.appendChild(tr);
