@@ -261,7 +261,7 @@ th, td {
 	}
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 425px){
 	.nested0{
 		grid-row:2;
 	}
