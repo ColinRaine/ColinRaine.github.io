@@ -261,7 +261,7 @@ th, td {
 		grid-column: 2/12;
 	}
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:375px){
 	.other{
 		grid-template-rows: auto;
 	}
