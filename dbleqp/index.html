@@ -18,21 +18,21 @@
 		<main>
 
 			<section class="attribute">
-				<p>Enter each equipment stat into an input field below. The order is important. Attribute 1 will be calculated against weight 1, attribute 2 against weight 2 and so on.</p>
+				<p>Enter each equipment slot into an input field below. The order is important. Slot 1 will be calculated against Weight 1, Slot 2 against Weight 2, and Slot 3 to Weight 3.</p>
 				<div class="secA1">
-					<label for="attr1">Attribute 1:</label>
+					<label for="attr1">Slot 1:</label>
 				</div>
 				<div class="secAn1">
 					<input type="number" class="attr1" id="attr1" min="0" max="100" step="0.1">
 				</div>
 				<div class="secA2">
-					<label for="attr2">Attribute 2: </label>
+					<label for="attr2">Slot 2: </label>
 				</div>
 				<div class="secAn2">
 					<input type="number" class="attr2" id="attr2" min="0" max="100" step="0.1">
 				</div>
 				<div class="secA3">
-					<label for="attr3">Attribute 3:</label>
+					<label for="attr3">Slot 3:</label>
 				</div>
 				<div class="secAn3">
 					<input type="number" class="attr3" id="attr3" min="0" max="100" step="0.1">
@@ -40,7 +40,7 @@
 			</section>
 
 			<section class="weight">
-				<p>This section is where a weight (percentage) will be entered into each input field that will total 100% (e.g., 20+20+60). There's no need to add a percentage symbol after the number.</p>
+				<p>This section is where a weight (percentage) will be entered into each input field. The weights must total 100% (e.g., 20+20+60). There's no need to add a percentage symbol after the number.</p>
 				<div class="secW1">
 					<label for="weight1">Weight 1:</label>
 				</div>
@@ -62,13 +62,15 @@
 			</section>
 
 			<section class="other">
-				<div class="nested0"><button class="submit">Submit</button>
+				<div class="nested0">
+					<button class="submit" type="button">Submit</button>
 				</div>
-				<div class="nested1"><input type="text" class="result" disabled> </div>
+				<div class="nested1">
+					<input type="text" class="result" disabled>
+					</div>
 				<div class="nested2">
-					<button class="reset">Reset Table</button>
+					<button class="reset" type="button">Reset Table</button>
 				</div>
-
 				<div class="nested3">
 					<table class="table">
 						<caption>OUTPUT</caption>

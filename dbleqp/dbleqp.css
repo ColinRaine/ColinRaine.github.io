@@ -6,6 +6,7 @@ html {
 	font-family: Avenir, "Helvetica Neue";
 	font-size: 100%;
   height: 100vh;
+	width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -173,16 +174,13 @@ section{
 	padding: 0;
 	margin: 0;
 	border: 0;
-
 }
 .reset{
 	height: 5em;
 	width: 10em;
 	border-radius: 1em;
 	background-color: #ff5555;
-
 }
-
 /*----------Table-----------*/
 caption{
 	text-align: left;
@@ -215,7 +213,6 @@ th, td {
   padding: 1rem;
 }
 /*--------------------------*/
-
 @media screen and (max-width:768px){
 	.attribute{
 		grid-column: 2/7
@@ -228,7 +225,6 @@ th, td {
 		grid-column: 3/11
 	}
 }
-
 @media screen and (max-width: 425px){
 	.attribute{
 		grid-row: 1;
