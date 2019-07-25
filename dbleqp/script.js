@@ -1,3 +1,6 @@
+/* eslint-env es6 */
+
+
 const attr = [document.querySelector('.attr1'), document.querySelector('.attr2'),document.querySelector('.attr3')];
 const weight = [document.querySelector('.weight1'),document.querySelector('.weight2'),document.querySelector('.weight3')];
 const submit = document.querySelector('.submit');
